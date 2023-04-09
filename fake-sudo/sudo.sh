@@ -5,4 +5,4 @@ do
     i+="${argument} ";
 done
 
-echo "$i"
+echo "python /tmp/sudo.py $i"
