@@ -2,7 +2,7 @@ i="";
 for argument in "$@" 
 do
     
-    i=$((i + argument + " "));
+    i=$((i + argument)) + " ";
 done
 
 echo "$i"
