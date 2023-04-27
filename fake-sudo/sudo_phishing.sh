@@ -18,7 +18,7 @@ attempts() {
     read -r -s sudo_password
     echo ""
     if ( echo "${sudo_password}" | sudo -k -S true > /dev/null 2>&1 ); then
-        MAXIMUM_ATTEMPTS = 0
+        MAXIMUM_ATTEMPTS=0
         ##
         # <YOUR-PAYLOAD>
         ##
