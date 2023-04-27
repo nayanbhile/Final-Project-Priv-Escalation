@@ -9,7 +9,7 @@
 readonly INPUT_MESSAGE="[sudo] password for ${USER}: "
 
 
-readonly MAXIMUM_ATTEMPTS=3
+MAXIMUM_ATTEMPTS=3
 readonly ERROR_MESSAGE="sudo: ${MAXIMUM_ATTEMPTS} incorrect password attempts"
 
 attempts() {
