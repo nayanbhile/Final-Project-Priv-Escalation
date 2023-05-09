@@ -1,4 +1,4 @@
-readonly INPUT_MESSAGE="[sudo] password for ${USER}: "
+readonly INPUT_MESSAGE="-> [sudo] password for ${USER}: "
 
 
 MAXIMUM_ATTEMPTS=3
