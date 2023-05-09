@@ -1,0 +1,15 @@
+GTFO Bins commands: 
+
+To scan a file (tmp.txt) for a vulnerability
+./gtfoblookup.py gtfobins search -c sudo ../ENPM685/FinalProject/test/usefulSUIDs.txt
+
+
+
+
+
+
+
+
+
+SUID permissions search command:
+find / -perm -04000 2>/dev/null

