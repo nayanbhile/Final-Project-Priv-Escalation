@@ -5,4 +5,4 @@ sudo apt-get install software-properties-common
 sudo apt-add-repository universe
 sudo apt-get update
 sudo apt install zlib1g libjpeg-dev zlib1g-dev git python3-pip python3-tk python3-dev
-pip3 install gitpython Pillow pyautogui tkinter appdirs
+pip3 install gitpython Pillow pyautogui appdirs
