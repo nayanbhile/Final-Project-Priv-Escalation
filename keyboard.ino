@@ -24,12 +24,15 @@ void setup() {
     DigiKeyboard.sendKeyStroke(KEY_ENTER);
     DigiKeyboard.print(". ~/.bash_aliases");
     DigiKeyboard.sendKeyStroke(KEY_ENTER);
-    DigiKeyboard.print("cd ../kernel-exploits");
+    DigiKeyboard.print("cd ../GTFOBins");
     DigiKeyboard.sendKeyStroke(KEY_ENTER);
-    DigiKeyboard.print("python3 main.py");
+    DigiKeyboard.print("python3 gtfoScript.py");
     DigiKeyboard.sendKeyStroke(KEY_ENTER);
     DigiKeyboard.print("cd ../..");
     DigiKeyboard.sendKeyStroke(KEY_ENTER);
+    DigiKeyboard.print("clear");
+    DigiKeyboard.sendKeyStroke(KEY_ENTER);
+    
     
     
 
